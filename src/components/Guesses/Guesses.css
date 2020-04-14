@@ -1,0 +1,12 @@
+.history{
+    padding-bottom: 10px;
+    overflow: auto;
+}
+
+.hidden{
+    display: none;
+}
+
+.guess{
+    width: 300px;
+}
