@@ -1,9 +1,9 @@
 import React from 'react';
-import './Guesses.css';
+import './GuessList.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGrinStars, faSmileWink } from '@fortawesome/free-solid-svg-icons';
 
-const Guesses = (props) => {
+const GuessList = (props) => {
     return (
         <div className={(props.history.length === 0) ? 'history mt-5 hidden' : 'history mt-5'}>
             <h2>Intentos</h2>
@@ -24,4 +24,4 @@ const Guesses = (props) => {
     );
 }
 
-export default Guesses;
+export default GuessList;
