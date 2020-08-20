@@ -30,7 +30,7 @@ class GuessInput extends React.Component {
             <div>
                 <label htmlFor="number" className="">Ingresa un número de cuatro dígitos</label>
                 <div className="input-group mb-3 input">
-                    <input type="number" className="form-control" id="number" value={this.state.guess} placeholder="Número" onChange={this.setGuess} onKeyDown={isEnabled?this.handleKeyDown:null} min="0" max="9999" />
+                    <input type="number" className="form-control" id="number" value={this.state.guess} placeholder="Número" onChange={this.setGuess} onKeyDown={isEnabled?this.handleKeyDown:null} autocomplete="off" min="0" max="9999" />
                     <input type="submit" disabled={!isEnabled} className="btn btn-primary" onClick={this.handleSubmit} value="Intentar" />
                 </div>
             </div>
